@@ -1,0 +1,64 @@
+body {
+    background-color: #E8F6EF;
+    margin-left: 10px;
+}
+
+h1,
+h3 {
+    font-family: 'Dancing Script',
+    cursive;
+    color: #125D98;
+}
+
+table,
+thead,
+th,
+td {
+    border: 1px solid #333;
+}
+
+hr {
+    border: none;
+    background-color: red;
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+.skill7 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.stars {
+    color: green;
+    
+}
+
+
+.profile__img {
+    margin-top: 5px;
+    max-width: 50%;
+    min-width: 300px;
+    height: 300px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.profile__img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+
+.copyRight {
+    text-align: center;
+    margin-top: 50px;
+}
+
