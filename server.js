@@ -7,7 +7,8 @@ const { response } = require("express");
 const { request } = require("http");
 const connectDB = require("./db");
 const User = require("./userModel");
-const port = 9000;
+require("dotenv").config();
+const PORT = process.env.PORT || 9000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -64,8 +65,8 @@ app.post("/register", (req, res) => {
   //construct req data
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
 });
 
 //API KEY : 9e6d62f3df34879e2de4acb279ffa36b-us6
